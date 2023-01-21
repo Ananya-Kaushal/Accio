@@ -19,7 +19,8 @@ public class Main {
         if(head==null){
             System.out.println("LinkedList is empty, not possible to remove first");
         } else if(head == tail){
-                   
+            head=null;
+            tail=null;    
         } else {
             Node nextOfHead = head.next;
             head = nextOfHead;
